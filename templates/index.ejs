@@ -1,0 +1,29 @@
+<!-- DO NOT MODIFY THIS FILE -->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Raffle</title>
+</head>
+
+<body>
+	<form action="/process" method="post">
+		<h1 style="color:blue;">Raffle Sign Up</h1>
+		<h2>Hello! Please enter your name below to enter the raffle for this week!</h2>
+
+		<strong>Name:</strong>
+		<input type="text" name="name"/> <br> </br>
+
+		
+
+		<input type="submit" id ="submitForm" value="Submit Application" />
+		<script type="text/javascript" >
+			document.getElementById('submitForm').onclick = function(){
+			alert('YAY! Congrats, you have now entered the raffle!');
+			}
+		</script>
+	</form>
+</body>
+
+</html>
