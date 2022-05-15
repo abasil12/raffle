@@ -91,8 +91,8 @@ app.post("/getNames", (request, response) => {
     })();
 });
 
-
-http.createServer(app).listen(process.argv[2]);
+http.createServer(app).listen(process.argv[2] || 3000);
+//http.createServer(app).listen(process.argv[2]);
 
 process.stdout.write(`Web server is started and running at http://localhost:${process.argv[2]}`);
 
